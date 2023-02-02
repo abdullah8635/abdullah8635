@@ -10,7 +10,7 @@ while waiting.lower() != "yes":
     print("I understand, let me know when you're ready")
     waiting = input("Are you ready? ")
 print("Here we go!")
-answer = input("Question 1: Where is the lowest point in world? " )
+answer = input("Question 1: What is the lowest point in world? " )
 if "mariana" in answer.lower():
     print("Nice job!")
     score += 1
