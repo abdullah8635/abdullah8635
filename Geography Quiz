@@ -1,0 +1,33 @@
+print("Welcome to our Geography Quiz!")
+score = 0
+playing = input("Would you like to play? ")
+if playing.lower() != "yes":
+    quit()
+print("Get Ready! This won't be easy! Remember spelling matters.")
+
+waiting = input("Are you ready? ")
+while waiting.lower() != "yes":
+    print("I understand, let me know when you're ready")
+    waiting = input("Are you ready? ")
+print("Here we go!")
+answer = input("Question 1: Where is the lowest point in world? " )
+if "mariana" in answer.lower():
+    print("Nice job!")
+    score += 1
+else:
+    print("Sorry thats not it")
+answer = input("Question 2: What is the tallest mountain in the world? " )
+if "everest" in answer.lower():
+    print("Nice job!")
+    score += 1
+else:
+    print("Sorry thats not it")
+answer = input("Question 3: What is the name of the longest river in Africa? ")
+if "nile" in answer.lower():
+    print("Nice job!")
+    score += 1
+else:
+    print("Sorry thats not it")
+print("Good job, your final score is:", score, "out of 3!")
+rounded_percent = round((score / 3 * 100), 2)
+print("You got a ", str(rounded_percent) + "%!")
